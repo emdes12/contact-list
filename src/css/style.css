@@ -96,6 +96,18 @@ input[type="number"]::-webkit-inner-spin-button {
   padding: 20px;
 }
 
+.contact-list {
+  margin: auto;
+  max-width: 600px;
+  width: 100%;
+}
+
+.red-btn {
+  background-color: red;
+  width: 30%;
+  transform: translateX(230%);
+}
+
 ul {
   list-style-type: none;
   border: 1px solid rgb(123, 255, 0);
