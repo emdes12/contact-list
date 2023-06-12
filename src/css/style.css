@@ -94,18 +94,22 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .contact-list {
   padding: 20px;
-}
-
-.contact-list {
   margin: auto;
-  max-width: 600px;
-  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .red-btn {
   background-color: red;
   width: 30%;
   transform: translateX(230%);
+}
+
+.list-contact,
+.contact-view {
+  max-width: 600px;
+  width: 100%;
 }
 
 ul {
@@ -134,17 +138,4 @@ li:not(:last-child) {
   background-color: rgb(123, 255, 0, 0.5);
   font-size: 10px;
   cursor: pointer;
-}
-
-@media (prefers-color-scheme: light) {
-  /* :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  } */
 }

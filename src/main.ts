@@ -2,7 +2,7 @@ import "./css/style.css";
 import FullList from "./modal/FullList";
 import ListContact from "./modal/ListContact";
 import ListTemaplate from "./templates/ListTemplate";
-import GenID from "./modal/GenId";
+import GenID from "./modal/GenID";
 
 const initApp = (): void => {
   const fullList = FullList.instance;
@@ -30,7 +30,6 @@ const initApp = (): void => {
     // if (!newnumber.length) return;
 
     const contactId: string = GenID.generateID();
-    console.log(contactId);
 
     const newContact = new ListContact(
       contactId,
@@ -43,6 +42,7 @@ const initApp = (): void => {
     fullList.addItem(newContact);
 
     template.render(fullList);
+    console.log(contactId);
   });
 
   const clearAllBtn = document.getElementById(

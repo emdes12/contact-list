@@ -22,11 +22,6 @@ export default class ListTemaplate implements DOMList {
   render(fullList: FullList): void {
     this.clear();
 
-    // <li class="contact">
-    //   <div class="contact-name">Saheed Balogun</div>
-    //   <span class="contact-group">Friends</span>
-    // </li>
-
     fullList.list.forEach((contact) => {
       const li = document.createElement("li") as HTMLLIElement;
       li.className = "contact";
